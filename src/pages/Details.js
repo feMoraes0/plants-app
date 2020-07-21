@@ -2,7 +2,6 @@ import React from 'react';
 import {
   SafeAreaView,
   View,
-  Text,
   Image,
   TouchableOpacity,
   StyleSheet,
@@ -10,13 +9,16 @@ import {
 import ArrowLeft from '../../assets/icons/arrow-left.svg';
 import Dots from '../../assets/icons/dots.svg';
 import NavigationDrawer from '../components/NavigationDrawer';
+import SliderCustom from '../components/SliderCustom';
 
 const Details = ({route, navigation}) => {
   const {flower} = route.params;
   return (
     <>
       <Image style={styles.image} source={flower.image} />
-      <NavigationDrawer name={flower.name} />
+      <NavigationDrawer name={flower.name}>
+        <SliderCustom />
+      </NavigationDrawer>
       <SafeAreaView style={styles.frontPage}>
         <View style={styles.header}>
           <TouchableOpacity onPress={() => navigation.pop()}>
