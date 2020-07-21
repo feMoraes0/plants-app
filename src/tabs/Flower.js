@@ -6,6 +6,7 @@ import {
   FlatList,
   StyleSheet,
   Image,
+  TouchableOpacity,
 } from 'react-native';
 import BellIcon from '../../assets/icons/bell.svg';
 import AddIcon from '../../assets/icons/add.svg';
@@ -16,7 +17,7 @@ import flowerImage04 from '../../assets/images/flower-004.png';
 import flowerImage05 from '../../assets/images/flower-005.png';
 import flowerImage06 from '../../assets/images/flower-006.png';
 
-const Flower = () => {
+const Flower = ({navigation}) => {
   const data = [
     {id: 0, name: 'Samantha', image: flowerImage02},
     {id: 1, name: 'Angelica', image: flowerImage01},
@@ -41,10 +42,12 @@ const Flower = () => {
           numColumns={2}
           renderItem={({item}) => {
             return (
-              <View style={styles.card}>
+              <TouchableOpacity
+                style={styles.card}
+                onPress={() => navigation.navigate('details', {flower: item})}>
                 <Image style={styles.cardImage} source={item.image} />
                 <Text style={styles.cardText}>{item.name}</Text>
-              </View>
+              </TouchableOpacity>
             );
           }}
         />
