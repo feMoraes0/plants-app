@@ -9,17 +9,14 @@ import {
 } from 'react-native';
 import ArrowLeft from '../../assets/icons/arrow-left.svg';
 import Dots from '../../assets/icons/dots.svg';
+import NavigationDrawer from '../components/NavigationDrawer';
 
 const Details = ({route, navigation}) => {
   const {flower} = route.params;
   return (
     <>
       <Image style={styles.image} source={flower.image} />
-      <View style={styles.navigationDrawer}>
-        <View style={styles.buttonTop} />
-        <Text style={styles.title}>{flower.name}</Text>
-        <Text style={styles.subtitle}>Tulip • 37 days • Healthy</Text>
-      </View>
+      <NavigationDrawer name={flower.name} />
       <SafeAreaView style={styles.frontPage}>
         <View style={styles.header}>
           <TouchableOpacity onPress={() => navigation.pop()}>
@@ -52,40 +49,6 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between',
     marginTop: 30,
     paddingHorizontal: 30,
-  },
-  navigationDrawer: {
-    position: 'absolute',
-    bottom: 0,
-    width: '100%',
-    backgroundColor: '#FFFFFF',
-    zIndex: 2,
-    paddingTop: 20,
-    paddingBottom: 50,
-    alignItems: 'center',
-    borderTopLeftRadius: 10,
-    borderTopRightRadius: 10,
-  },
-  buttonTop: {
-    backgroundColor: '#DCDBDA',
-    borderRadius: 2,
-    height: 4,
-    width: 30,
-  },
-  title: {
-    fontFamily: 'Raleway-Bold',
-    fontSize: 24,
-    lineHeight: 28,
-    letterSpacing: 1.64062,
-    color: '#3C4046',
-    marginTop: 22,
-  },
-  subtitle: {
-    color: '#828282',
-    fontFamily: 'Raleway',
-    fontSize: 16,
-    lineHeight: 19,
-    letterSpacing: 1.04,
-    marginTop: 11,
   },
 });
 
