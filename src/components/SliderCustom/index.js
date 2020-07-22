@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
-import {View, Text, StyleSheet} from 'react-native';
+import {View, Text} from 'react-native';
+import styles from './style.js';
 import Slider from '@react-native-community/slider';
 
 const SliderCustom = ({maximumValue, minimumValue, initialValue, label}) => {
@@ -22,26 +23,5 @@ const SliderCustom = ({maximumValue, minimumValue, initialValue, label}) => {
     </View>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    width: '100%',
-    flexDirection: 'row',
-    alignItems: 'center',
-    marginBottom: 20,
-  },
-  label: {
-    width: '25%',
-    color: '#828282',
-    fontFamily: 'Raleway-Bold',
-    letterSpacing: 0.957031,
-    fontSize: 10,
-    lineHeight: 12,
-    textTransform: 'uppercase',
-  },
-  slider: {
-    width: '75%',
-  },
-});
 
 export default SliderCustom;
