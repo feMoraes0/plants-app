@@ -1,17 +1,15 @@
 <h1 align="center">Plants App</h1>
-<h5 align="center">Plant health mobile application built with React Native.</h5>
+<h3 align="center">Plant health mobile application built with React Native.</h3>
 
-<!-- <p align="center">
-  <img width="250" src="URL">
-</p> -->
-
-## :rocket: Knowledges
- - `React Native`
+<p align="center">
+  <img width="300" src="https://raw.githubusercontent.com/feMoraes0/project-prints/master/plants-app/print-001.png">
+  <img width="300" src="https://raw.githubusercontent.com/feMoraes0/project-prints/master/plants-app/print-002.png">
+</p>
 
 ## :ballot_box_with_check: To Do
 
  - [x] Create screens following a free app design.
- - [ ] Add animation to `Details Screen``
+ - [ ] Add animation to `Details Screen`
  - [ ] Change `Slider` for another one with labels and possibility to edit thumb. 
 
 ## :book: How to use
@@ -30,6 +28,7 @@ $ npm install
 
 # Run the app
 $ react-native run-ios
+
 # or
 $ react-native run-android
 ```
