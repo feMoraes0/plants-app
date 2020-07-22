@@ -2,15 +2,21 @@
 <h3 align="center">Plant health mobile application built with React Native.</h3>
 
 <p align="center">
-  <img width="300" src="https://raw.githubusercontent.com/feMoraes0/project-prints/master/plants-app/print-001.png">
-  <img width="300" src="https://raw.githubusercontent.com/feMoraes0/project-prints/master/plants-app/print-002.png">
+  <img width="200" src="https://raw.githubusercontent.com/feMoraes0/project-prints/master/plants-app/print-001.png">
+  <img width="200" src="https://raw.githubusercontent.com/feMoraes0/project-prints/master/plants-app/print-002.png">
+  <img width="200" src="https://raw.githubusercontent.com/feMoraes0/project-prints/master/plants-app/print-003.png">
+  <img width="200" src="https://raw.githubusercontent.com/feMoraes0/project-prints/master/plants-app/plants-app.gif">
 </p>
 
 ## :ballot_box_with_check: To Do
 
- - [x] Create screens following a free app design.
- - [ ] Add animation to `Details Screen`
- - [ ] Change `Slider` for another one with labels and possibility to edit thumb. 
+ - [x] Create screens following a free app design;
+ - [x] Add animation to `Details Screen`;
+ - [ ] Change `Slider` for another one with labels and possibility to edit thumb;
+ - [ ] Add app icon and splash screen;
+
+## :paperclip: Useful Links
+ - [Gesture Animations with Nubank clone by Rocketseat](https://www.youtube.com/watch?v=DDm0M_rZLJo)
 
 ## :book: How to use
 
