@@ -16,9 +16,6 @@ const Details = ({route, navigation}) => {
   return (
     <>
       <Image style={styles.image} source={flower.image} />
-      <NavigationDrawer name={flower.name}>
-        <SliderCustom />
-      </NavigationDrawer>
       <SafeAreaView style={styles.frontPage}>
         <View style={styles.header}>
           <TouchableOpacity onPress={() => navigation.pop()}>
@@ -27,6 +24,32 @@ const Details = ({route, navigation}) => {
           <Dots />
         </View>
       </SafeAreaView>
+      <NavigationDrawer name={flower.name}>
+        <SliderCustom
+          minimumValue={1}
+          maximumValue={6}
+          initialValue={3}
+          label="water level"
+        />
+        <SliderCustom
+          minimumValue={0}
+          maximumValue={200}
+          initialValue={75}
+          label="water temp"
+        />
+        <SliderCustom
+          minimumValue={0}
+          maximumValue={100}
+          initialValue={85}
+          label="air temp"
+        />
+        <SliderCustom
+          minimumValue={0}
+          maximumValue={100}
+          initialValue={23}
+          label="CO2 PUMP"
+        />
+      </NavigationDrawer>
     </>
   );
 };

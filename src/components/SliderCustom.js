@@ -2,20 +2,21 @@ import React, {useState} from 'react';
 import {View, Text, StyleSheet} from 'react-native';
 import Slider from '@react-native-community/slider';
 
-const SliderCustom = () => {
-  const [sliderValue, setSliderValue] = useState(1);
+const SliderCustom = ({maximumValue, minimumValue, initialValue, label}) => {
+  const [sliderValue, setSliderValue] = useState(initialValue);
 
   return (
     <View style={styles.container}>
-      <Text style={styles.label}>Slider</Text>
+      <Text style={styles.label}>{label}</Text>
       <Slider
         style={styles.slider}
+        thumbTintColor="#3C4046"
         value={sliderValue}
-        minimumValue={1}
-        maximumValue={10}
-        step={9}
-        minimumTrackTintColor="#FFFFFF"
-        maximumTrackTintColor="#000000"
+        minimumValue={minimumValue}
+        maximumValue={maximumValue}
+        step={1}
+        minimumTrackTintColor="#3C4046"
+        maximumTrackTintColor="#E6E6E6"
         onValueChange={(value) => setSliderValue(value)}
       />
     </View>
@@ -27,12 +28,19 @@ const styles = StyleSheet.create({
     width: '100%',
     flexDirection: 'row',
     alignItems: 'center',
+    marginBottom: 20,
   },
   label: {
-    width: '15%',
+    width: '25%',
+    color: '#828282',
+    fontFamily: 'Raleway-Bold',
+    letterSpacing: 0.957031,
+    fontSize: 10,
+    lineHeight: 12,
+    textTransform: 'uppercase',
   },
   slider: {
-    width: '85%',
+    width: '75%',
   },
 });
 
