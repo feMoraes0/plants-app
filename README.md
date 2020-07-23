@@ -1,4 +1,6 @@
+<p align="center">
 <img width="100" src="https://raw.githubusercontent.com/feMoraes0/project-prints/master/plants-app/app-icon.png">
+</p>
 <h1 align="center">Plants App</h1>
 <h3 align="center">Plant health mobile application built with React Native.</h3>
 
