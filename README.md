@@ -17,8 +17,8 @@
  - [x] Add animation to `Details Screen`;
  - [ ] Change `Slider` for another one with labels and possibility to edit thumb;
  - [ ] Add app icon and splash screen;
-  - [x] App Icon;
-  - [ ] Splash screen;
+    - [x] App Icon;
+    - [ ] Splash screen;
 
 ## :paperclip: Useful Links
  - [Gesture Animations with Nubank clone by Rocketseat](https://www.youtube.com/watch?v=DDm0M_rZLJo)
